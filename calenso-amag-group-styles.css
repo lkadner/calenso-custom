@@ -1,0 +1,122 @@
+.container-fluid {
+	font-family: 'amag_textlight';
+    font-size: 19px;
+    color: #000;
+}
+
+.hour-slot,
+.card-body .cbw-function,
+.card-body .cbw-description { 
+	font-family: 'amag_textlight';
+}
+
+.btn-primary {
+    background: #000 !important;
+    border: 0 !important;
+    padding: 22px 55px;
+  	font-family: 'amag_textbold';
+    font-size: 20px !important;
+    margin-left: 20px;
+}
+
+/*
+screen 1 + 2
+*/
+.card {
+    border-radius: 0 !important; 
+    border: 0 !important;
+    margin-bottom: 30px;
+}
+
+.card * {font-size: 19px !important;}
+
+.card-body {
+    background: #F5F5F5;
+    font-family: 'amag_textbold' !important;
+    border: 0;
+    position: relative;
+    transition: all .3s;
+}
+
+.card-body > div {
+    min-height: 200px;
+}
+
+.shadow .card-body > div { min-height: unset; }
+
+
+.selected-card .card-body {
+    background: #172983;
+    color: white;
+}
+
+.card-body .avatar img {
+    width: 200px !important;
+    height: 200px !important;
+    margin-right: 20px;
+	border-radius: 0 !important;
+    
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100% !important;
+    width: auto !important;
+}
+
+.card-body .description {
+	margin-left: 250px;
+}
+
+.card-body:hover {
+	box-shadow: 0px 10px 20px rgb(0 0 0 / 10%); /*0px 20px 40px rgb(0 0 0 / 10%)*/
+}
+
+.worker-slot-card {
+    flex-basis: 100%;
+	max-width: unset;
+}
+
+.next-arrow-container {
+    margin-left: 15px;
+}
+
+.next-arrow-container img {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+/*
+calender + time
+*/
+.cal-selected .cal-day-number {
+    background: #172983;
+    border-radius: 0;
+}
+.resource-name {display:none;}
+
+.card.shadow {
+box-shadow: unset !important;
+}
+
+/*
+form
+*/
+.ng-select .ng-select-container,
+.form-control {
+	border-radius: 0;
+}
+
+.personal-form-view a { padding-bottom: 3px; border-bottom: 2px solid }
+.personal-form-view label {margin-top: 15px;}
+.personal-form-view .btn.disabled, .btn:disabled {
+    opacity: 0.55;
+    color: #a0a0a0 !important;}
+
+
+/* summary */
+.list-group .description,
+.list-group .list-item-title {
+    font-size: 19px !important;
+}
+
+.remove-button {padding-bottom: 3px; border-bottom: 2px solid}
