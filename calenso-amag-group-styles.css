@@ -10,6 +10,11 @@
 	font-family: 'amag_textlight';
 }
 
+.step-element-title {
+	font-family: 'amag_textbold';
+    font-size: 24px !important;
+}
+
 .btn-primary {
     background: #000 !important;
     border: 0 !important;
@@ -18,6 +23,8 @@
     font-size: 20px !important;
     margin-left: 20px;
 }
+
+.cbw-description {display:none}
 
 /*
 screen 1 + 2
