@@ -4,6 +4,8 @@
     color: #000;
 }
 
+.container-fluid a:hover {text-decoration: none;}
+
 .hour-slot,
 .card-body .cbw-function,
 .card-body .cbw-description { 
@@ -90,6 +92,7 @@ screen 1 + 2
 .next-arrow-container img {
     border: 2px solid white;
     border-radius: 50%;
+    display: none;
 }
 
 /*
