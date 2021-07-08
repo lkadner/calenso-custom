@@ -59,12 +59,36 @@ screen 1 + 2
     color: white;
 }
 
+/*mobile*/
+.card-body > div > div > div {
+flex-wrap: wrap;
+}
+@media(max-width:767px) {
 .card-body .avatar img {
-    width: 200px !important;
-    height: 200px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0;
+	border-radius: 0 !important;
+    width: auto !important;
+}
+    /* buttons */
+.d-flex.justify-content-end.mt-4 {
+    background:lime;
+    flex-wrap: wrap;
+}
+.d-flex.justify-content-end.mt-4 .mr-2 {
+    margin: 0 !important;
+}
+.d-flex.justify-content-end.mt-4 button {
+    margin-bottom: 20px;
+}
+
+}
+/*tablet+*/
+@media(min-width:768px) {
+.card-body .avatar img {
     margin-right: 20px;
 	border-radius: 0 !important;
-    
     position: absolute;
     top:0;
     left:0;
@@ -79,7 +103,7 @@ screen 1 + 2
 .card-body:hover {
 	box-shadow: 0px 10px 20px rgb(0 0 0 / 10%); /*0px 20px 40px rgb(0 0 0 / 10%)*/
 }
-
+}
 .worker-slot-card {
     flex-basis: 100%;
 	max-width: unset;
