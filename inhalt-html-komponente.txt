@@ -1,0 +1,38 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script> 
+<style>
+  #js-iframersize {
+    width: 1px;
+    min-width: 100%;
+	border-collapse: collapse;
+	margin: 0 -15px;
+  }
+</style>
+<iframe  frameBorder="0" id="js-iframersize" src="https://smartwidget.calenso.com/?partner_uuid=4b1e512a-a125-40d0-b178-fefdb4d1f8ee&widget_uuid=876b3864-1208-4be7-8f59-545899c974fd&locale=de_CH"></iframe>
+<script>
+  iFrameResize({ heightCalculationMethod: 'lowestElement' }, '#js-iframersize')
+
+var calensoFrame = document.getElementById('js-iframersize');
+
+// Options for the observer (which mutations to observe)
+var config = { attributes: true, childList: false, subtree: false, attributeOldValue: true };
+
+// Callback function to execute when mutations are observed
+var callback = function(mutationsList, observer) {
+    for(const mutation of mutationsList) {
+       if (mutation.type === 'attributes') {
+			var preValue = mutation.oldValue.replace('overflow: hidden; height: ','').replace('px;','px');
+			var postValue = calensoFrame.style.height;
+			console.log(preValue, postValue, 'bigchange:', preValue.length > postValue.length);
+			if(preValue.length > postValue.length) {
+				window.scrollTo(0,0);
+			}
+        }
+    }
+};
+
+// Create an observer instance linked to the callback function
+var observer = new MutationObserver(callback);
+
+// Start observing the target node for configured mutations
+observer.observe(calensoFrame , config);
+</script>
