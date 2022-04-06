@@ -146,8 +146,8 @@ form
     opacity: 0.55;
     color: #a0a0a0 !important;}
 
-.mt-3.row.ng-star-inserted span.ng-star-inserted > span,
-.mt-3.row.ng-star-inserted span.ng-star-inserted {display: none; }
+.mt-3.row.ng-star-inserted span.ng-star-inserted > span:not(.ng-option-label),
+.mt-3.row.ng-star-inserted span.ng-star-inserted:not(.ng-option-label) {display: none; }
 
 /* summary */
 .list-group .description,
