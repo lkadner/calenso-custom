@@ -1,3 +1,16 @@
+@font-face {
+  font-family:'amag_textbold';
+  src:url('https://smartwidget.calenso.com/assets/fonts/AMAG/amag_textbold.otf');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:'amag_textlight';
+  src:url('https://smartwidget.calenso.com/assets/fonts/AMAG/amag_textlight.otf');
+  font-weight:normal;
+  font-style:normal;
+}
 .container-fluid {
 	font-family: 'amag_textlight';
     font-size: 19px;
