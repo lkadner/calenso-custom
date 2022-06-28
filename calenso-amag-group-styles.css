@@ -60,7 +60,7 @@ screen 1 + 2
     transition: all .3s;
 }
 
-.card-body > div {
+.cbsw-workers-selection-step .card-body > div {
     min-height: 200px;
 }
 
